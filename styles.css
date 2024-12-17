@@ -413,7 +413,7 @@ footer {
 
 }
 
-@media (max-width: 465px) {
+@media (max-width: 414px) {
   
   .books {
     flex-direction: column;
