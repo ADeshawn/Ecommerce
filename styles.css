@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 nav {
@@ -56,6 +57,10 @@ ul {
 
 li {
   list-style-type: none;
+}
+
+.nav__links {
+  display: flex;
 }
 
 .nav__link {
@@ -313,6 +318,7 @@ body {
 .book {
   width:25%;
   padding: 24px;
+
 }
 
 .book__image--wrapper {
@@ -388,30 +394,39 @@ footer {
   max-width: 1200;
   padding: 0 8px;
 }
-/* SMAL PHONES TABLETS AND LARGE SMARTPHONES  */
 
-  menu {
-    display: block;
-  }
-  h1 {
-    font-size: 40px;
-  }
-  h2 {
-    font-size: 26px
-  }
+/* SMALL PHONES TABLETS AND LARGE SMARTPHONES  */
 
-  button {
-    font-size: 18px;
-  }
-
-}
-
-@media (max-width: 550px) {
+@media (max-width: 750px) {
   .nav__links {
-    display: none;
+    visibility: hidden;
   }
 
   .btn__menu {
     display:block;
   }
+
+  .book {
+    width: 50%;
+  }
+
+
+}
+
+@media (max-width: 550px) {
+  
+  .books {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .book {
+    width: 100%;
+  }
+  
+  .america {
+    font-size: 20px;
+  }
+
 }
